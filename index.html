@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>PWI - RWD</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="favicon.png" type="image/x-icon"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<meta lang="en">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="menu">
+		<div class="menu__container">
+			<img alt="Logo EN'JOY" class="menu__logo" src="logo.svg">
+			<ul class="menu__nav">
+					<li class="menu__nav__element">
+						<a href="#" onclick="minimizeMenu()">Home</a>
+					</li>
+					<li class="menu__nav__element" onclick="minimizeMenu()">
+						<a href="#aboutGame">About</a>
+					</li>
+					<li class="menu__nav__element" onclick="minimizeMenu()">
+						<a href="#infoDisplay">Play</a>
+					</li>
+				</ul>
+		</div>
+		<a class="menu__cross" onclick="minimizeMenu()">&times;</a>
+	</div>
+	<div class="navbar">
+		<div class="navbar__container">
+			<div class="navbar__logo">
+				<img alt="Logo EN'JOY" src="logo.svg">
+			</div>
+			<div class="navbar__nav">
+				<ul class="navbar__nav__list">
+					<li class="navbar__nav__list__element navbar__nav__list__element--active">
+						<a href="#">Home</a>
+					</li>
+					<li class="navbar__nav__list__element ">
+						<a href="#aboutGame">About</a>
+					</li>
+					<li class="navbar__nav__list__element">
+						<a href="#infoDisplay">Play</a>
+					</li>
+				</ul>
+			</div>
+			<div class="navbar__hamburger">
+				<img alt="Hamburger menu" src="hamburger.svg" onclick="maximizeMenu()">
+			</div>
+		</div>
+	</div>
+	<div class="mainSection">
+		<div class="mainSection__container">
+			<div class="mainSection__container__dots">
+				<div class="mainSection__container__dot mainSection__container__dot--active"></div>
+				<div class="mainSection__container__dot"></div>
+				<div class="mainSection__container__dot"></div>
+			</div>
+			<div class="mainSection__container__text">
+				<div class="overflowHider">
+					<h1>Tic Tac Toe</h1>
+				</div>
+				<div class="overflowHider">
+					<p>Well known old pen and paper game in new JavaScript fashion. Scroll down to try it now!</p>
+				</div>
+				<a href="#infoDisplay" class="button--light">PLAY IT</a>
+			</div>
+		</div>
+	</div>
+	<div class="crossGrid">
+		<div class="crossGrid__left">
+			<ul>
+				<li>
+					01/<strong>03</strong>
+				</li>
+				<li>
+					Tic
+				</li>
+				<li>
+					Tac
+				</li>
+				<li>
+					Toe
+				</li>
+			</ul>
+		</div>
+		<div class="crossGrid__right">
+			<div class="crossGrid__right__text">
+				<div class="overflowHider">
+					<div class="crossGrid__right__text__elem">
+						<h4>Created By</h4>
+						<p>Mikołaj Tkaczyk</p>
+					</div>
+				</div>
+				<div class="overflowHider">
+					<div class="crossGrid__right__text__elem">
+						<h4>Images From</h4>
+						<p>Unsplash.com</p>
+					</div>
+				</div>
+			</div>
+			<div class="crossGrid__right_image"></div>
+		</div>
+	</div>
+	<div class="aboutSection">
+		<div class="aboutSection__container">
+			<div class="aboutSection__left">
+				<h3 id="infoDisplay">Choose player count below</h3>
+				<div class="aboutSection__left__board">
+					<div id="part1" class="board__part empty"></div>
+					<div id="part2" class="board__part empty"></div>
+					<div id="part3" class="board__part empty"></div>
+					<div id="part4" class="board__part empty"></div>
+					<div id="part5" class="board__part empty"></div>
+					<div id="part6" class="board__part empty"></div>
+					<div id="part7" class="board__part empty"></div>
+					<div id="part8" class="board__part empty"></div>
+					<div id="part9" class="board__part empty"></div>
+				</div>
+				<div class="aboutSection__left__card">
+					<p>Choose number of players for your game.</p>
+					<div class="aboutSection__left__card__split">
+						<a role="button" class="button--light smaller playerButton 1">ONE PLAYER</a>
+						<a role="button" class="button--light smaller playerButton 2">TWO PLAYERS</a>
+					</div>
+					<p>Or reset your game to play again!</p>
+					<div class="aboutSection__left__card__split">
+						<a role="button" class="button--light smaller resetButton">RESET GAME</a>
+					</div>
+				</div>
+
+			</div>
+			<div id="aboutGame" class="aboutSection__right">
+				<div class="aboutSection__right__text">
+					<div class="aboutSection__right__breadcrumbs">
+						<span>Tic</span>
+						<span>Tac</span>
+						<span>Toe</span>
+						<span>Game</span>
+						<span>Play</span>
+					</div>
+					<h3>How To Start The Game</h3>
+					<p>What you see on the left/down is the board. It will keep track of game progress for you. First choose if you will be playing alone against computer or two player with other person. Set it with buttons positioned on black info board. Place your signs in turns. First one to fill a line horizontally, vertically or diagonally wins!</p>
+				</div>
+				<hr/>
+				<div class="aboutSection__right__footer">
+					<div class="aboutSection__right__footer__avatar"></div>
+					<p>Best luck and have fun! ~ Mikołaj Tkaczyk</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer__container">
+			<div class="footer__block">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			<div class="footer__block">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			<div class="footer__block">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+		</div>
+		<div class="footer__claim">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			<p>Made by Mikołaj Tkaczyk | 2021 &#169;</p>
+		</div>
+		<div class="footer__logo">
+				<img alt="Logo EN'JOY" src="logo.svg">
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
